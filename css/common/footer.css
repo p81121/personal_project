@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+}
+
+.info {
+  width: 50%;
+  background-color: #ffefce;
+  padding: 40px;
+  font-size: 14px;
+}
+
+.info > p,
+.webmap > ul > p {
+  font-weight: bold;
+}
+
+.webmap {
+  width: 50%;
+  background-color: #ffefce;
+  padding: 40px;
+  font-size: 14px;
+}
+
+.webmap > ul {
+  list-style: none;
+}
+
+.webmap > ul > li > a {
+  text-decoration: none;
+  color: #2d2d2d;
+  line-height: 30px;
+}
+
+.img_icon {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.img_icon > a > img {
+  width: 40px;
+  height: 40px;
+}
+
+.tibame {
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-self: flex-end;
+  width: 300px;
+  height: 60px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  position: relative;
+}
+.navitem {
+  display: inline-block;
+  text-decoration: none;
+  color: #2d2d2d;
+  margin: 0 20px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.navitem:first-child::before {
+  content: "";
+  margin: 0 8px;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #2d2d2d;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.navitem:first-child:hover::before {
+  transform: rotate(90deg);
+}
+
+.navitem_list {
+  list-style: none;
+  position: absolute;
+  background-color: white;
+  left: 20px;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.navitem_list > li,
+.navitem_secondlist > li {
+  padding: 10px;
+}
+
+.navitem_secondlist {
+  list-style: none;
+  position: absolute;
+  background-color: white;
+  left: 170px;
+  opacity: 0;
+}
+
+.navitem_list li a,
+.navitem_secondlist li a {
+  /* line-height: 60px; */
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.navitem:nth-child(3)::before {
+  content: "";
+  margin: 0 8px;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #2d2d2d;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.navitem:nth-child(3):hover::before {
+  transform: rotate(90deg);
+}
+
+.navitem:focus + .navitem_list {
+  opacity: 1;
+}
+
+.navitem:focus + .navitem_secondlist {
+  opacity: 1;
+}
+
+.navitem_list > li:hover,
+.navitem_secondlist > li:hover {
+  background-color: #ffefce;
+}
