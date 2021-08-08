@@ -133,10 +133,6 @@ iframe {
   margin-top: 40px;
 }
 
-.carousel slide {
-  border: 1px solid green;
-}
-
 .carousel {
   max-width: calc(100% - 100px);
   display: flex;
