@@ -134,6 +134,10 @@ h1 {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .show_card {
   display: inline-block;
   padding: 20px;
@@ -238,6 +242,7 @@ section {
 }
 
 .carousel-arrow {
+  cursor: pointer;
   position: absolute;
   top: calc(50px - 12px);
 }

@@ -23,11 +23,6 @@ header {
   align-self: flex-end;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 nav {
   position: relative;
 }
@@ -38,6 +33,22 @@ nav {
   margin: 0 20px;
   font-size: 20px;
   line-height: 60px;
+}
+
+.navitem:hover + .navitem_secondlist {
+  display: block;
+}
+
+.navitem_secondlist:hover {
+  display: block;
+}
+
+.navitem:hover + .navitem_list {
+  display: block;
+}
+
+.navitem_list:hover {
+  display: block;
 }
 
 .navitem:first-child::before {
@@ -55,12 +66,12 @@ nav {
 }
 
 .navitem_list {
+  display: none;
   list-style: none;
   position: absolute;
   background-color: white;
   left: 20px;
   font-size: 20px;
-  opacity: 0;
 }
 
 .navitem_list > li,
@@ -69,11 +80,11 @@ nav {
 }
 
 .navitem_secondlist {
+  display: none;
   list-style: none;
   position: absolute;
   background-color: white;
   left: 170px;
-  opacity: 0;
 }
 
 .navitem_list li a,
