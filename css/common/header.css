@@ -15,12 +15,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .logo {
   align-self: flex-end;
-  width: 300px;
-  height: 60px;
 }
 
 img {
@@ -36,7 +36,7 @@ nav {
   text-decoration: none;
   color: #2d2d2d;
   margin: 0 20px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 60px;
 }
 
@@ -59,7 +59,7 @@ nav {
   position: absolute;
   background-color: white;
   left: 20px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0;
 }
 
@@ -78,8 +78,8 @@ nav {
 
 .navitem_list li a,
 .navitem_secondlist li a {
-  /* line-height: 60px; */
-  font-size: 18px;
+  line-height: 40px;
+  font-size: 20px;
   text-decoration: none;
   color: #2d2d2d;
 }

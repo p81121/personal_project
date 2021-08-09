@@ -1,0 +1,251 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner,
+.activity,
+.show,
+.placard {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 活動消息 */
+
+h1 {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.activity_title {
+  font-size: 24px;
+  position: relative;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity_title::before {
+  content: "";
+  width: 60px;
+  height: 20px;
+  background: #ffce5b;
+  position: absolute;
+  left: 50px;
+  top: 4px;
+  z-index: -1;
+}
+
+.activity_title::after {
+  content: "";
+  width: 1200px;
+  height: 2px;
+  background: #a7a7a7;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+}
+
+.activity_post {
+  margin-top: 40px;
+  height: 500px;
+  width: 370px;
+  transition: all 0.4s;
+  font-size: 0;
+}
+
+.post_container {
+  height: 250px;
+  border: 1px solid #a7a7a7;
+  border-top: transparent;
+  padding: 30px;
+}
+
+.activity_post:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 5px #a7a7a7;
+}
+
+.post_date {
+  font-size: 16px;
+  color: #a7a7a7;
+}
+
+.post_title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+.post_title > a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.post_excerpt {
+  font-size: 16px;
+}
+
+/* 展覽特區 */
+
+.show {
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.show_title {
+  font-size: 24px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.show_title::before {
+  content: "";
+  width: 60px;
+  height: 20px;
+  background: #ffce5b;
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  z-index: -1;
+}
+
+.show_title::after {
+  content: "";
+  width: 1200px;
+  height: 2px;
+  background: #a7a7a7;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+}
+
+.show_banner {
+  margin: 0 auto;
+}
+
+.show_card {
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  right: 2px;
+  bottom: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 5px #ffce5b;
+  animation-name: in_animation;
+  animation-duration: 1s;
+}
+
+.show_card_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.show_excerpt {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@keyframes in_animation {
+  0% {
+    right: -600px;
+  }
+  100% {
+    right: 2px;
+  }
+}
+
+/* 中心公告 */
+
+.placard {
+  background: #ffefce;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.placard_title {
+  font-size: 24px;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.placard_title::before {
+  content: "";
+  width: 60px;
+  height: 20px;
+  background: #ffce5b;
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  z-index: -1;
+}
+
+.placarad_card {
+  width: 70%;
+  margin-left: 120px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 60px;
+}
+.placard_card_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.placard_excerpt {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* FB粉專 */
+iframe {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/* 友站連結 */
+
+section {
+  border: 1px solid green;
+}
+
+.carousel {
+  max-width: calc(100% - 100px);
+  display: flex;
+  flex-shrink: 0;
+  overflow-x: scroll;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: calc(50px - 12px);
+}
+
+.carousel-arrow-left {
+  left: 0px;
+}
+
+.carousel-arrow-right {
+  right: 0px;
+}
