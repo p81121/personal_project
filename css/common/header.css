@@ -35,7 +35,16 @@ nav {
   line-height: 60px;
 }
 
-.navitem:hover + .navitem_secondlist {
+.navitem_list {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: white;
+  left: 20px;
+  font-size: 20px;
+}
+
+.navitem:hover > .navitem_secondlist {
   display: block;
 }
 
@@ -43,7 +52,7 @@ nav {
   display: block;
 }
 
-.navitem:hover + .navitem_list {
+.navitem:hover > .navitem_list {
   display: block;
 }
 
@@ -61,17 +70,8 @@ nav {
   border-right: 6px solid transparent;
 }
 
-.navitem:first-child:hover::before {
+.navitem:hover::before {
   transform: rotate(90deg);
-}
-
-.navitem_list {
-  display: none;
-  list-style: none;
-  position: absolute;
-  background-color: white;
-  left: 20px;
-  font-size: 20px;
 }
 
 .navitem_list > li,
@@ -87,15 +87,15 @@ nav {
   left: 170px;
 }
 
-.navitem_list li a,
-.navitem_secondlist li a {
+.navitem > a,
+.navitem a {
   line-height: 40px;
   font-size: 20px;
   text-decoration: none;
   color: #2d2d2d;
 }
 
-.navitem:nth-child(3)::before {
+.navitem-arrow::before {
   content: "";
   margin: 0 8px;
   display: inline-block;
@@ -105,7 +105,7 @@ nav {
   border-right: 6px solid transparent;
 }
 
-.navitem:nth-child(3):hover::before {
+.navitem-arrow:hover::before {
   transform: rotate(90deg);
 }
 
