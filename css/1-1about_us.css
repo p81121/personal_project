@@ -1,0 +1,68 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* 麵包屑 */
+.breadcrumb_list {
+  list-style: none;
+  font-size: 16px;
+  margin: 10px 15px;
+}
+
+.breadcrumb_list > li {
+  display: inline-block;
+  color: gray;
+  font-size: 1rem;
+}
+
+.breadcrumb_list > li > a {
+  text-decoration: none;
+  display: inline-block;
+  color: #2d2d2d;
+}
+
+.breadcrumb_list > li::before {
+  content: "/";
+  font-size: 18px;
+  color: #ffce5b;
+  margin: 0 10px;
+}
+
+.breadcrumb_list > li:first-child::before {
+  display: none;
+}
+
+/* 關於中心 */
+.guid_content {
+  border: 8px solid #ffce5b;
+  border-radius: 40px;
+  width: 90%;
+  padding: 80px 200px 80px 80px;
+}
+/* 環境介紹 */
+.area_content {
+  border: 8px solid #ffce5b;
+  border-radius: 40px;
+  width: 90%;
+}

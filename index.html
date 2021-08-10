@@ -22,28 +22,28 @@
 
 <body>
   <header>
-    <div class="logo"><img src="./image/index/logo_400x80.png" /></div>
+    <div class="logo"><a href="./index.html"><img src="./image/index/logo_400x80.png" /></a></div>
     <nav>
       <div class="navitem navitem-arrow">
         <a href="#">關於我們</a>
         <ul class="navitem_list ">
-          <li><a href="#">介紹與參訪預約</a></li>
-          <li><a href="#">會議室租借</a></li>
-          <li><a href="#">交通資訊</a></li>
+          <li><a href="./1-1about_us.html">介紹與參訪預約</a></li>
+          <li><a href="./1-2meeting.html\">會議室租借</a></li>
+          <li><a href="./1-3traffic.html">交通資訊</a></li>
         </ul>
       </div>
       
       <div class="navitem navitem-arrow">
         <a href="#">活動報報</a>
         <ul class="navitem_secondlist">
-          <li><a href="#">主題展覽</a></li>
-          <li><a href="#">講座與課程</a></li>
+          <li><a href="./2-1show.html">主題展覽</a></li>
+          <li><a href="./2-2class.html">講座與課程</a></li>
         </ul>
       </div> 
 
-      <a class="navitem" href="#">性別平等專區</a>
-      <a class="navitem" href="#">女力加油站</a>
-      <a class="navitem" href="#">志工服務</a>
+      <a class="navitem" href="./gender_equality.html">性別平等專區</a>
+      <a class="navitem" href="./gas_station.html">女力加油站</a>
+      <a class="navitem" href="./volunteer.html">志工服務</a>
     </nav>
   </header>
   <div class="banner"><img src="./image/index/banner.jpg" /></div>
@@ -104,7 +104,12 @@
 </div>
 
 <!-- 中心公告 -->
+
+<div class="placard_title_container">
+<img class="womenwalk" src="./image/index/icon_flag.png">
 <h1 class="placard_title">中心公告</h1>
+</div>
+
 <div class="placard">
   <div class="placarad_card">
   <div class="placard_card_title">提升疫情警備標準</div>
@@ -124,15 +129,28 @@
 </div>
 
 
-  <!-- FB粉專 -->
-    <iframe
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTWSC&tabs=timeline&width=422&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-        width="422" height="280" style="border: none; overflow: hidden;" scrolling="no" frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    
 
-    <!-- 友站連結 -->
+<!-- 新聞與臉書 -->
+<div class="social_container">  
+  <div class="news_container">
+    <h1 class="news_title">新聞專區</h1>
+    <ul class="news_inner">
+      <li><a href="https://udn.com/news/story/7323/4862298" target="_blank"><pre>2021/09/15　　平溪推「女路導覽」 女礦工詮釋在地故事</pre></a></li>
+      <li><a href="http://www.mypeople.tw/index.php?r=site/article&id=1629396" target="_blank"><pre>2020/08/08　　新北「性平特攻隊」換尿片5秒奪冠 溫柔動作獲「身負屎命」獎</pre></a></li>
+      <li><a href="https://www.idn.com.tw/news/news_content.aspx?catid=4&catsid=2&catdid=0&artid=20200808hsieh009" target="_blank"><pre>2020/08/08　　新北市玩具銀行 性平特攻隊主題展開幕</pre></a></li>
+      <li><a href="https://n.yam.com/Article/20200808766199 target="_blank"><pre>2020/08/08　　媽媽陪伴小孩玩玩具是爸爸的2倍</pre></a></li>
+      <li><a href="https://ge.sw.ntpc.gov.tw/ge/ge/family_detail/43772731" target="_blank"><pre>2020/07/30　　性平報報第35期</pre></a></li>
+      <li><a href="https://www.merit-times.com/newspage.aspx?unid=592571"target="_blank"><pre>2020/07/27　　女礦工轉型導覽員 述說菁桐祖輩辛酸</pre></a></li>
+      <li><a href="https://www.chinatimes.com/realtimenews/20200604005305-260421?chdtv"target="_blank"><pre>2020/06/04　　新北婦女做一張椅子 為自己找到人生的位置</pre></a></li>
+    </ul>
+  </div>
+  <div class="fb_container">
+  <img class="icon_walkwomen" src="./image/index/icon_walkwomen.png">
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTWSC&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+</div>
+
+ <!-- 友站連結 -->
     <section>
     <div class="carousel-container">
       <image id="arrow-left" class="carousel-arrow carousel-arrow-left" src="./image/index/icon-carousel-left.png"></image>
@@ -148,6 +166,7 @@
     </div>
     </div>    
   </section>
+
 
   <footer>
     <div class="info">
@@ -171,18 +190,18 @@
       <ul>
         <p>網站地圖</p>
         <br />
-        <li><a href="#">介紹與參訪預約</a></li>
-        <li><a href="#">會議室租借</a></li>
-        <li><a href="#">交通資訊</a></li>
-        <li><a href="#">主題展覽</a></li>
-        <li><a href="#">講座與課程</a></li>
-        <li><a href="#">性別平等專區</a></li>
-        <li><a href="#">女力加油站</a></li>
-        <li><a href="#">志工服務</a></li>
+        <li><a href="./1-1about_us.html">介紹與參訪預約</a></li>
+        <li><a href="./1-2meeting.html">會議室租借</a></li>
+        <li><a href="./1-3traffic.html">交通資訊</a></li>
+        <li><a href="./2-1show.html">主題展覽</a></li>
+        <li><a href="./2-2class.html">講座與課程</a></li>
+        <li><a href="./gender_equality.html">性別平等專區</a></li>
+        <li><a href="./gas_station.html">女力加油站</a></li>
+        <li><a href="./volunteer.html">志工服務</a></li>
       </ul>
       <div class="img_icon">
-        <a href="#"><img src="./image/index/icon_fb.png" /></a>
-        <a href="#"><img src="./image/index/icon_youtube.png" /></a>
+        <a href="https://www.facebook.com/NTWSC/posts/1387567328310264"><img src="./image/index/icon_fb.png" /></a>
+        <a href="https://www.youtube.com/channel/UCJvvtrC2Y9s6efAm7P3YrwA"><img src="./image/index/icon_youtube.png" /></a>
       </div>
     </div>
   </footer>
