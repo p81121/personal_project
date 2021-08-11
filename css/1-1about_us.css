@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
 }
 
 h1 {
@@ -11,6 +12,11 @@ h2 {
   font-size: 20px;
 }
 
+header {
+  position: relative;
+  z-index: 2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +25,9 @@ h2 {
 
 .main_container {
   width: 1200px;
+  height: 2000px; /*要用z-index定位沒辦法QQ*/
   margin: 0 auto;
-  /* border: 1px solid red; */
+  position: relative;
 }
 
 /* 麵包屑 */
@@ -56,13 +63,113 @@ h2 {
 /* 關於中心 */
 .guid_content {
   border: 8px solid #ffce5b;
+  background: white;
   border-radius: 40px;
   width: 90%;
   padding: 80px 200px 80px 80px;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
 }
 /* 環境介紹 */
 .area_content {
+  background: white;
   border: 8px solid #ffce5b;
   border-radius: 40px;
   width: 90%;
+  padding: 80px;
+  position: absolute;
+  top: 760px;
+  right: 0;
+  z-index: 0;
+}
+
+.area_intro_container {
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+}
+
+.place {
+  border-radius: 20px 0 0 20px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.area_intro {
+  border-radius: 0 20px 20px 0;
+  background: #ffce5b;
+  width: 500px;
+  height: 300px;
+  padding: 100px 50px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+img.light {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+/* 環境介紹地圖區 */
+
+.area_map_container {
+  margin-top: 10px;
+  width: 900px;
+  font-size: 0;
+}
+
+.audioroom,
+.bookcrossing,
+.readingroom,
+.showroom {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+  position: relative;
+}
+.audioroom {
+  border: 4px solid #ffce5b;
+  border-right: transparent;
+  border-radius: 20px 0 0 20px;
+  width: 350px;
+  height: 200px;
+}
+.bookcrossing {
+  border: 4px solid #ffce5b;
+  border-right: transparent;
+  width: 200px;
+  height: 200px;
+}
+.readingroom {
+  border: 4px solid #ffce5b;
+  border-radius: 0 20px 20px 0;
+  width: 350px;
+  height: 200px;
+}
+.showroom {
+  border: 4px solid #ffce5b;
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.circle {
+  background-color: #d6d6d6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px 0 0 0;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}
+
+.-click {
+  background-color: #ff4b2d;
+  width: 55px;
+  height: 55px;
 }

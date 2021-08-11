@@ -1,0 +1,94 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.main_container,
+.breadcrumb {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main_container {
+  border: 8px solid #ffce5b;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+}
+
+.img_container {
+  padding-top: 20px;
+  width: 30%;
+}
+
+.place_img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content_container {
+  width: 70%;
+  padding: 40px 60px;
+  position: relative;
+  line-height: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.icon_check {
+  position: absolute;
+  left: 30px;
+  padding-top: 4px;
+}
+
+.download_button {
+  text-align: end;
+}
+
+/* 麵包屑 */
+.breadcrumb_list {
+  list-style: none;
+  font-size: 16px;
+  margin: 10px 15px;
+}
+
+.breadcrumb_list > li {
+  display: inline-block;
+  color: gray;
+  font-size: 1rem;
+}
+
+.breadcrumb_list > li > a {
+  text-decoration: none;
+  display: inline-block;
+  color: #2d2d2d;
+}
+
+.breadcrumb_list > li::before {
+  content: "/";
+  font-size: 18px;
+  color: #ffce5b;
+  margin: 0 10px;
+}
+
+.breadcrumb_list > li:first-child::before {
+  display: none;
+}
