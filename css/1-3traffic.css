@@ -4,12 +4,10 @@ body {
   color: #2d2d2d;
 }
 
-h1 {
-  font-size: 24px;
-}
-
-h2 {
-  font-size: 20px;
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 header {
@@ -30,45 +28,13 @@ header {
   display: flex;
 }
 
-.img_container {
-  padding-top: 20px;
-  width: 30%;
-}
-
-.place_img {
-  border-radius: 10px;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+.map {
+  object-fit: contain;
 }
 
 .content_container {
-  width: 70%;
-  padding: 40px 60px;
-  position: relative;
+  margin: 50px 10px;
   line-height: 30px;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.icon_check {
-  position: absolute;
-  left: 30px;
-  padding-top: 6px;
-}
-
-.download_button {
-  text-align: end;
-}
-
-.button {
-  border-radius: 10px;
-}
-
-.button:hover {
-  box-shadow: 3px 3px 10px #ffce5b;
 }
 
 /* 麵包屑 */
