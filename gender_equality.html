@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <script src="./js/index.js"></script>
+    <script src="./js/gender_equality.js"></script>
 
     <title>新北市婦女服務中心</title>
   </head>
@@ -78,7 +78,18 @@
 
     <!-- youtube影片區 -->
     <div class="film_container">
-      <div class="youtube">我要放YOUTUBE影片</div>
+      <div class="youtube">
+        <iframe
+          id="youtube"
+          width="570"
+          height="360"
+          src="https://www.youtube.com/embed/04anNYHnmrk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div class="youtubelist_container">
         <div class="youbelist_title">
           <img src="./image/gender_equality/Icon-video.png" />　CEDAW系列短片
@@ -87,14 +98,7 @@
           <div class="animate">
             <div class="line"></div>
           </div>
-          <div class="youtubelist_link">
-            第一集 互相幫忙篇<br />
-            第二集 出嫁篇<br />
-            第三集 家務分工篇<br />
-            第四集 平等篇<br />
-            第五集 位置篇<br />
-            第六集 發揮潛能篇<br />
-          </div>
+          <div id="cedaw-list" class="youtubelist_link"></div>
         </div>
       </div>
 
@@ -106,13 +110,13 @@
           <div class="animate">
             <div class="line"></div>
           </div>
-          <div class="youtubelist_link">
-            第一集<br />
-            第二集<br />
-            第三集<br />
-            第四集<br />
-            第五集<br />
-            觀看更多<img src="./image/gender_equality/Icon-right-circle.png" />
+          <div id="anti_gender-list" class="youtubelist_link">
+            <a href="https://www.youtube.com/channel/UCI1902Tuyzq5WXRevEtA5pA/videos">
+              觀看更多<img
+                src="./image/gender_equality/Icon-right-circle.png"
+              />
+            </a>
+            </div>
           </div>
         </div>
       </div>

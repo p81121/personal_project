@@ -129,6 +129,10 @@ img.light {
   font-size: 0;
 }
 
+.area_map_container > div {
+  cursor: pointer;
+}
+
 .audioroom,
 .bookcrossing,
 .readingroom,
@@ -176,7 +180,7 @@ img.light {
   bottom: 6px;
 }
 
-.-click {
+.activity {
   background-color: #ff4b2d;
   width: 55px;
   height: 55px;
