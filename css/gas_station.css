@@ -1,0 +1,86 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.main_container {
+  margin: 0 auto;
+  width: 1200px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.power_img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.library_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.library_content {
+  font-size: 18px;
+}
+
+.library_content > a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #2d2d2d;
+  line-height: 50px;
+}
+
+.sofa_img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 影片區 */
+.video_container {
+  margin: 50px auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.video_card {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  width: 300px;
+  box-shadow: 2px 2px 6px #a7a7a7;
+}
+
+.video_text {
+  padding: 20px;
+  height: 180px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.video_content > a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #2d2d2d;
+  line-height: 40px;
+  margin: 10px;
+}
+
+a:hover {
+  color: #ff4b2d;
+}
