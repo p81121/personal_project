@@ -90,6 +90,11 @@ header {
   background-color: #707070;
 }
 
+.arrowlink {
+  position: relative;
+  top: 4px;
+}
+
 /* 下載專區 */
 .download_container {
   margin-top: 100px;
