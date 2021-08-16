@@ -1,0 +1,89 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
+}
+
+.chart_container,
+.time_container,
+.service_container,
+.medals_container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  margin-top: 150px;
+}
+/* 志工隊服務理念 */
+
+.info_container {
+  width: 60%;
+  padding: 0 140px;
+}
+
+.info_title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.info_content {
+  margin-top: 20px;
+}
+
+/* 志工招募 */
+
+.time_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px;
+}
+
+.title {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title > img {
+  position: absolute;
+  right: -30px;
+  top: 40px;
+}
+
+.service_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px;
+}
+
+.service_container > img {
+  object-fit: none;
+}
+
+/* 得獎紀錄 */
+.medals_container {
+  display: block;
+}
+
+.medalsImg {
+}
+
+.medals_content {
+  display: flex;
+  background-color: #ffefce;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.medals_title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.medals_info_content {
+  width: 300px;
+  height: 80px;
+}
